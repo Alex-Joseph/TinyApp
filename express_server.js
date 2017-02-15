@@ -47,11 +47,15 @@ app.post("/urls/:id/delete", (req, res) => {
   res.redirect("/urls");
 });
 
+app.post("/urls/:shortURL/update", (req, res) => {
+  urlDatabase[req.params.shortURL] = req.body.longURL;
+  res.redirect("/urls");
+});
+
 app.post("/urls", (req, res) => {
   let id = generateRandomString();
-  urlDatabase[id] = req.body.longURL;
-  console.log(urlDatabase);  // debug statement to see POST parameters
-  res.redirect(`http://localhost:8080/urls/${id}`);         // Respond with 'Ok' (we will replace this)
+  urlDatabase[id] = `http://${req.body.longURL}`;
+  res.redirect(`http://localhost:8080/urls/${id}`);
 });
 
 app.get("/u/:shortURL", (req, res) => {
