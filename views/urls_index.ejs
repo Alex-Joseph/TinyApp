@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>TinyApp</title>
-</head>
-<header>
-    <% include ./partials/_header %>
-</header>
-<body>
-  <ul>
-      <p><% for (var k in urls) { %>
-          <li><%= k %> - <%= urls[k] %></li>
+  <head>
+    <title>TinyApp - All urls</title>
+  </head>
+  <header>
+      <% include ./partials/_header %>
+  </header>
+  <body>
+    <ul>
+      <p>
+        <% for (var k in urls) { %>
+        <li>
+          <%= k %> &rarr; <a href="<%= urls[k] %>"><%= urls[k] %><a>
           <form method="POST" action="/urls/<%= k %>/delete">
-            <input type="submit" value="Delete"></form>
-      <% }; %></p>
-  </ul>
-
-  <a href="http://localhost:8080/urls/new">Get new url</a>
-</body>
+            <input type="submit" value="Delete">
+            <a href="/urls/<%= k %>/update"> Edit </a>
+          </form>
+        </li>
+        <% }; %>
+      </p>
+    </ul>
+    <a href="http://localhost:8080/urls/new">Get new url</a>
+  </body>
 </html>
