@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TinyApp</title>
+</head>
+<header>
+    <% include ./partials/_header %>
+</header>
+<body>
+  <ul>
+      <p><% for (var i in urls) { %>
+          <li><%= i %> - <%= urls[i] %></li>
+      <% }; %></p>
+  </ul>
+  <a href="http://localhost:8080/urls/new">Get new url</a>
+</body>
+</html>
