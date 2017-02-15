@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TinyApp</title>
+</head>
+<header>
+    <% include ./partials/_header %>
+</header>
+<body>
+  <ul>
+      <p><% for (var k in urls) { %>
+          <li><%= k %> - <%= urls[k] %></li>
+          <form method="POST" action="/urls/<%= k %>/delete">
+            <input type="submit" value="Delete"></form>
+      <% }; %></p>
+  </ul>
+
+  <a href="http://localhost:8080/urls/new">Get new url</a>
+</body>
+</html>
