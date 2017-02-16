@@ -7,6 +7,7 @@
       <% include ./partials/_header %>
   </header>
   <body>
+    <h1>Your Short URLs</h1>
     <ul>
       <p>
         <% for (var k in urls) { %>
@@ -14,9 +15,10 @@
           <%= k %> &rarr; <a href="<%= urls[k] %>"><%= urls[k] %><a>
           <form method="POST" action="/urls/<%= k %>/delete">
             <input type="submit" value="Delete">
-            <a href="/urls/<%= k %>/update"> Edit </a>
           </form>
+          <a href="/urls/<%= k %>"> Edit </a>
         </li>
+        <br>
         <% }; %>
       </p>
     </ul>

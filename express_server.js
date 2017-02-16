@@ -50,7 +50,7 @@ app.get("/u/:shortURL", (req, res) => {
 app.post("/urls", (req, res) => {
   let id = generateRandomString(3);
   urlDatabase[id] = `http://${req.body.longURL}`;
-  res.redirect(`http://localhost:8080/urls/${id}`);
+  res.redirect(`/urls/${id}`);
 });
 
 app.post("/urls/:id/delete", (req, res) => {
