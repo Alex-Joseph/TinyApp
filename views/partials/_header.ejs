@@ -1,18 +1,18 @@
 <meta charset="UTF-8">
 
-<% if (username) { %>
+<% if (locals.userId) { %>
+  <!-- user is logged in -->
   <a>
-    <%= username %>
+    <%= userId %>
     <form action="/logout" method="POST">
     <input type="submit" value="Logout">
     </form>
   </a>
-
+<!-- user needs to register or login -->
  <% } else { %>
    <h1>
-    <form action="/login" method="POST">
-    <input type="text" name="username">
-    <input type="submit" value="Submit">
-    </form>
+     <!-- login form -->
+    <a href="/register">Register</a>
+    <a href="/login">Login</a>
   </h1>
 <% } %>
