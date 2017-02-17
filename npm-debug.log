@@ -1,47 +1,1058 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/home/vagrant/.nvm/versions/node/v6.3.1/bin/node',
 1 verbose cli   '/home/vagrant/.nvm/versions/node/v6.3.1/bin/npm',
-1 verbose cli   'start' ]
+1 verbose cli   'install',
+1 verbose cli   'bcrypt',
+1 verbose cli   '--no-bin-links',
+1 verbose cli   '--save' ]
 2 info using npm@3.10.3
 3 info using node@v6.3.1
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info lifecycle tiny-app@1.0.0~prestart: tiny-app@1.0.0
-6 silly lifecycle tiny-app@1.0.0~prestart: no script for prestart, continuing
-7 info lifecycle tiny-app@1.0.0~start: tiny-app@1.0.0
-8 verbose lifecycle tiny-app@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle tiny-app@1.0.0~start: PATH: /home/vagrant/.nvm/versions/node/v6.3.1/lib/node_modules/npm/bin/node-gyp-bin:/vagrant/week2day2/TinyApp/node_modules/.bin:/home/vagrant/.nvm/versions/node/v6.3.1/bin:/home/vagrant/.nvm/versions/node/v6.3.1/bin:/home/vagrant/.rvm/gems/ruby-2.3.0/bin:/home/vagrant/.rvm/gems/ruby-2.3.0@global/bin:/home/vagrant/.rvm/rubies/ruby-2.3.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/vagrant/.rvm/bin:/home/vagrant/.rvm/bin
-10 verbose lifecycle tiny-app@1.0.0~start: CWD: /vagrant/week2day2/TinyApp
-11 silly lifecycle tiny-app@1.0.0~start: Args: [ '-c', 'nodemon express_server.js' ]
-12 silly lifecycle tiny-app@1.0.0~start: Returned: code: 1  signal: null
-13 info lifecycle tiny-app@1.0.0~start: Failed to exec start script
-14 verbose stack Error: tiny-app@1.0.0 start: `nodemon express_server.js`
-14 verbose stack Exit status 1
-14 verbose stack     at EventEmitter.<anonymous> (/home/vagrant/.nvm/versions/node/v6.3.1/lib/node_modules/npm/lib/utils/lifecycle.js:242:16)
-14 verbose stack     at emitTwo (events.js:106:13)
-14 verbose stack     at EventEmitter.emit (events.js:191:7)
-14 verbose stack     at ChildProcess.<anonymous> (/home/vagrant/.nvm/versions/node/v6.3.1/lib/node_modules/npm/lib/utils/spawn.js:40:14)
-14 verbose stack     at emitTwo (events.js:106:13)
-14 verbose stack     at ChildProcess.emit (events.js:191:7)
-14 verbose stack     at maybeClose (internal/child_process.js:852:16)
-14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
-15 verbose pkgid tiny-app@1.0.0
-16 verbose cwd /vagrant/week2day2/TinyApp
-17 error Linux 4.4.0-21-generic
-18 error argv "/home/vagrant/.nvm/versions/node/v6.3.1/bin/node" "/home/vagrant/.nvm/versions/node/v6.3.1/bin/npm" "start"
-19 error node v6.3.1
-20 error npm  v3.10.3
-21 error code ELIFECYCLE
-22 error tiny-app@1.0.0 start: `nodemon express_server.js`
-22 error Exit status 1
-23 error Failed at the tiny-app@1.0.0 start script 'nodemon express_server.js'.
-23 error Make sure you have the latest version of node.js and npm installed.
-23 error If you do, this is most likely a problem with the tiny-app package,
-23 error not with npm itself.
-23 error Tell the author that this fails on your system:
-23 error     nodemon express_server.js
-23 error You can get information on how to open an issue for this project with:
-23 error     npm bugs tiny-app
-23 error Or if that isn't available, you can get their info via:
-23 error     npm owner ls tiny-app
-23 error There is likely additional logging output above.
-24 verbose exit [ 1, true ]
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData bcrypt
+8 silly fetchNamedPackageData bcrypt
+9 silly mapToRegistry name bcrypt
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'bcrypt',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'bcrypt',
+12 silly mapToRegistry   name: 'bcrypt',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+14 verbose request uri https://registry.npmjs.org/bcrypt
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 1:29:28 AM
+17 verbose request id e94b1aae93e4e618
+18 verbose etag W/"58a19670-16d95"
+19 verbose lastModified Mon, 13 Feb 2017 11:20:16 GMT
+20 http request GET https://registry.npmjs.org/bcrypt
+21 http 304 https://registry.npmjs.org/bcrypt
+22 verbose headers { date: 'Fri, 17 Feb 2017 01:40:31 GMT',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   etag: 'W/"58a19670-16d95"',
+22 verbose headers   age: '199',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'x-served-by': 'cache-jfk8132-JFK',
+22 verbose headers   'x-cache': 'HIT',
+22 verbose headers   'x-cache-hits': '1',
+22 verbose headers   'x-timer': 'S1487295631.728573,VS0,VE0',
+22 verbose headers   vary: 'Accept-Encoding' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Fri, 17 Feb 2017 01:40:31 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     etag: 'W/"58a19670-16d95"',
+23 silly get     age: '199',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-jfk8132-JFK',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1487295631.728573,VS0,VE0',
+23 silly get     vary: 'Accept-Encoding' } ]
+24 verbose etag https://registry.npmjs.org/bcrypt from cache
+25 verbose get saving bcrypt to /home/vagrant/.npm/registry.npmjs.org/bcrypt/.cache.json
+26 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule bcrypt@1.0.2 checking installable status
+40 silly cache add args [ 'bcrypt', null ]
+41 verbose cache add spec bcrypt
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'bcrypt',
+42 silly cache add   scope: null,
+42 silly cache add   escapedName: 'bcrypt',
+42 silly cache add   name: 'bcrypt',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed bcrypt@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for bcrypt
+45 info addNameTag [ 'bcrypt', 'latest' ]
+46 silly mapToRegistry name bcrypt
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'bcrypt',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   escapedName: 'bcrypt',
+49 silly mapToRegistry   name: 'bcrypt',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+51 verbose addNameTag registry:https://registry.npmjs.org/bcrypt not in flight; fetching
+52 verbose get https://registry.npmjs.org/bcrypt not expired, no request
+53 silly addNameTag next cb for bcrypt with tag latest
+54 silly addNamed bcrypt@1.0.2
+55 verbose addNamed "1.0.2" is a plain semver version for bcrypt
+56 silly cache afterAdd bcrypt@1.0.2
+57 verbose afterAdd /home/vagrant/.npm/bcrypt/1.0.2/package/package.json not in flight; writing
+58 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+59 verbose afterAdd /home/vagrant/.npm/bcrypt/1.0.2/package/package.json written
+60 silly fetchNamedPackageData node-pre-gyp
+61 silly mapToRegistry name node-pre-gyp
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry data Result {
+64 silly mapToRegistry   raw: 'node-pre-gyp',
+64 silly mapToRegistry   scope: null,
+64 silly mapToRegistry   escapedName: 'node-pre-gyp',
+64 silly mapToRegistry   name: 'node-pre-gyp',
+64 silly mapToRegistry   rawSpec: '',
+64 silly mapToRegistry   spec: 'latest',
+64 silly mapToRegistry   type: 'tag' }
+65 silly mapToRegistry uri https://registry.npmjs.org/node-pre-gyp
+66 verbose request uri https://registry.npmjs.org/node-pre-gyp
+67 verbose request no auth needed
+68 info attempt registry request try #1 at 1:29:28 AM
+69 verbose etag W/"589fa64b-2756b"
+70 verbose lastModified Sun, 12 Feb 2017 00:03:23 GMT
+71 http request GET https://registry.npmjs.org/node-pre-gyp
+72 http 304 https://registry.npmjs.org/node-pre-gyp
+73 verbose headers { date: 'Fri, 17 Feb 2017 01:40:32 GMT',
+73 verbose headers   via: '1.1 varnish',
+73 verbose headers   'cache-control': 'max-age=300',
+73 verbose headers   etag: 'W/"589fa64b-2756b"',
+73 verbose headers   age: '24',
+73 verbose headers   connection: 'keep-alive',
+73 verbose headers   'x-served-by': 'cache-jfk8132-JFK',
+73 verbose headers   'x-cache': 'HIT',
+73 verbose headers   'x-cache-hits': '1',
+73 verbose headers   'x-timer': 'S1487295632.010363,VS0,VE0',
+73 verbose headers   vary: 'Accept-Encoding' }
+74 silly get cb [ 304,
+74 silly get   { date: 'Fri, 17 Feb 2017 01:40:32 GMT',
+74 silly get     via: '1.1 varnish',
+74 silly get     'cache-control': 'max-age=300',
+74 silly get     etag: 'W/"589fa64b-2756b"',
+74 silly get     age: '24',
+74 silly get     connection: 'keep-alive',
+74 silly get     'x-served-by': 'cache-jfk8132-JFK',
+74 silly get     'x-cache': 'HIT',
+74 silly get     'x-cache-hits': '1',
+74 silly get     'x-timer': 'S1487295632.010363,VS0,VE0',
+74 silly get     vary: 'Accept-Encoding' } ]
+75 verbose etag https://registry.npmjs.org/node-pre-gyp from cache
+76 verbose get saving node-pre-gyp to /home/vagrant/.npm/registry.npmjs.org/node-pre-gyp/.cache.json
+77 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+78 silly resolveWithNewModule node-pre-gyp@0.6.32 checking installable status
+79 silly cache add args [ 'node-pre-gyp@0.6.32', null ]
+80 verbose cache add spec node-pre-gyp@0.6.32
+81 silly cache add parsed spec Result {
+81 silly cache add   raw: 'node-pre-gyp@0.6.32',
+81 silly cache add   scope: null,
+81 silly cache add   escapedName: 'node-pre-gyp',
+81 silly cache add   name: 'node-pre-gyp',
+81 silly cache add   rawSpec: '0.6.32',
+81 silly cache add   spec: '0.6.32',
+81 silly cache add   type: 'version' }
+82 silly addNamed node-pre-gyp@0.6.32
+83 verbose addNamed "0.6.32" is a plain semver version for node-pre-gyp
+84 silly mapToRegistry name node-pre-gyp
+85 silly mapToRegistry using default registry
+86 silly mapToRegistry registry https://registry.npmjs.org/
+87 silly mapToRegistry data Result {
+87 silly mapToRegistry   raw: 'node-pre-gyp',
+87 silly mapToRegistry   scope: null,
+87 silly mapToRegistry   escapedName: 'node-pre-gyp',
+87 silly mapToRegistry   name: 'node-pre-gyp',
+87 silly mapToRegistry   rawSpec: '',
+87 silly mapToRegistry   spec: 'latest',
+87 silly mapToRegistry   type: 'tag' }
+88 silly mapToRegistry uri https://registry.npmjs.org/node-pre-gyp
+89 verbose addNameVersion registry:https://registry.npmjs.org/node-pre-gyp not in flight; fetching
+90 verbose get https://registry.npmjs.org/node-pre-gyp not expired, no request
+91 silly cache afterAdd node-pre-gyp@0.6.32
+92 verbose afterAdd /home/vagrant/.npm/node-pre-gyp/0.6.32/package/package.json not in flight; writing
+93 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+94 verbose afterAdd /home/vagrant/.npm/node-pre-gyp/0.6.32/package/package.json written
+95 silly fetchNamedPackageData mkdirp
+96 silly mapToRegistry name mkdirp
+97 silly mapToRegistry using default registry
+98 silly mapToRegistry registry https://registry.npmjs.org/
+99 silly mapToRegistry data Result {
+99 silly mapToRegistry   raw: 'mkdirp',
+99 silly mapToRegistry   scope: null,
+99 silly mapToRegistry   escapedName: 'mkdirp',
+99 silly mapToRegistry   name: 'mkdirp',
+99 silly mapToRegistry   rawSpec: '',
+99 silly mapToRegistry   spec: 'latest',
+99 silly mapToRegistry   type: 'tag' }
+100 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+101 verbose request uri https://registry.npmjs.org/mkdirp
+102 verbose request no auth needed
+103 info attempt registry request try #1 at 1:29:28 AM
+104 verbose etag W/"58a2ed15-61b1"
+105 verbose lastModified Tue, 14 Feb 2017 11:42:13 GMT
+106 http request GET https://registry.npmjs.org/mkdirp
+107 http 304 https://registry.npmjs.org/mkdirp
+108 verbose headers { date: 'Fri, 17 Feb 2017 01:40:32 GMT',
+108 verbose headers   via: '1.1 varnish',
+108 verbose headers   'cache-control': 'max-age=300',
+108 verbose headers   etag: 'W/"58a2ed15-61b1"',
+108 verbose headers   age: '189',
+108 verbose headers   connection: 'keep-alive',
+108 verbose headers   'x-served-by': 'cache-jfk8132-JFK',
+108 verbose headers   'x-cache': 'HIT',
+108 verbose headers   'x-cache-hits': '13',
+108 verbose headers   'x-timer': 'S1487295632.068552,VS0,VE0',
+108 verbose headers   vary: 'Accept-Encoding' }
+109 silly get cb [ 304,
+109 silly get   { date: 'Fri, 17 Feb 2017 01:40:32 GMT',
+109 silly get     via: '1.1 varnish',
+109 silly get     'cache-control': 'max-age=300',
+109 silly get     etag: 'W/"58a2ed15-61b1"',
+109 silly get     age: '189',
+109 silly get     connection: 'keep-alive',
+109 silly get     'x-served-by': 'cache-jfk8132-JFK',
+109 silly get     'x-cache': 'HIT',
+109 silly get     'x-cache-hits': '13',
+109 silly get     'x-timer': 'S1487295632.068552,VS0,VE0',
+109 silly get     vary: 'Accept-Encoding' } ]
+110 verbose etag https://registry.npmjs.org/mkdirp from cache
+111 verbose get saving mkdirp to /home/vagrant/.npm/registry.npmjs.org/mkdirp/.cache.json
+112 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+113 silly resolveWithNewModule mkdirp@0.5.1 checking installable status
+114 silly cache add args [ 'mkdirp@~0.5.1', null ]
+115 verbose cache add spec mkdirp@~0.5.1
+116 silly cache add parsed spec Result {
+116 silly cache add   raw: 'mkdirp@~0.5.1',
+116 silly cache add   scope: null,
+116 silly cache add   escapedName: 'mkdirp',
+116 silly cache add   name: 'mkdirp',
+116 silly cache add   rawSpec: '~0.5.1',
+116 silly cache add   spec: '>=0.5.1 <0.6.0',
+116 silly cache add   type: 'range' }
+117 silly addNamed mkdirp@>=0.5.1 <0.6.0
+118 verbose addNamed ">=0.5.1 <0.6.0" is a valid semver range for mkdirp
+119 silly addNameRange { name: 'mkdirp', range: '>=0.5.1 <0.6.0', hasData: false }
+120 silly mapToRegistry name mkdirp
+121 silly mapToRegistry using default registry
+122 silly mapToRegistry registry https://registry.npmjs.org/
+123 silly mapToRegistry data Result {
+123 silly mapToRegistry   raw: 'mkdirp',
+123 silly mapToRegistry   scope: null,
+123 silly mapToRegistry   escapedName: 'mkdirp',
+123 silly mapToRegistry   name: 'mkdirp',
+123 silly mapToRegistry   rawSpec: '',
+123 silly mapToRegistry   spec: 'latest',
+123 silly mapToRegistry   type: 'tag' }
+124 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+125 verbose addNameRange registry:https://registry.npmjs.org/mkdirp not in flight; fetching
+126 verbose get https://registry.npmjs.org/mkdirp not expired, no request
+127 silly addNameRange number 2 { name: 'mkdirp', range: '>=0.5.1 <0.6.0', hasData: true }
+128 silly addNameRange versions [ 'mkdirp',
+128 silly addNameRange   [ '0.0.1',
+128 silly addNameRange     '0.0.2',
+128 silly addNameRange     '0.0.3',
+128 silly addNameRange     '0.0.4',
+128 silly addNameRange     '0.0.5',
+128 silly addNameRange     '0.0.6',
+128 silly addNameRange     '0.0.7',
+128 silly addNameRange     '0.1.0',
+128 silly addNameRange     '0.2.0',
+128 silly addNameRange     '0.2.1',
+128 silly addNameRange     '0.2.2',
+128 silly addNameRange     '0.3.0',
+128 silly addNameRange     '0.3.1',
+128 silly addNameRange     '0.3.2',
+128 silly addNameRange     '0.3.3',
+128 silly addNameRange     '0.3.4',
+128 silly addNameRange     '0.3.5',
+128 silly addNameRange     '0.4.0',
+128 silly addNameRange     '0.4.1',
+128 silly addNameRange     '0.4.2',
+128 silly addNameRange     '0.5.0',
+128 silly addNameRange     '0.5.1' ] ]
+129 silly addNamed mkdirp@0.5.1
+130 verbose addNamed "0.5.1" is a plain semver version for mkdirp
+131 silly cache afterAdd mkdirp@0.5.1
+132 verbose afterAdd /home/vagrant/.npm/mkdirp/0.5.1/package/package.json not in flight; writing
+133 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+134 verbose afterAdd /home/vagrant/.npm/mkdirp/0.5.1/package/package.json written
+135 silly fetchNamedPackageData minimist
+136 silly mapToRegistry name minimist
+137 silly mapToRegistry using default registry
+138 silly mapToRegistry registry https://registry.npmjs.org/
+139 silly mapToRegistry data Result {
+139 silly mapToRegistry   raw: 'minimist',
+139 silly mapToRegistry   scope: null,
+139 silly mapToRegistry   escapedName: 'minimist',
+139 silly mapToRegistry   name: 'minimist',
+139 silly mapToRegistry   rawSpec: '',
+139 silly mapToRegistry   spec: 'latest',
+139 silly mapToRegistry   type: 'tag' }
+140 silly mapToRegistry uri https://registry.npmjs.org/minimist
+141 verbose request uri https://registry.npmjs.org/minimist
+142 verbose request no auth needed
+143 info attempt registry request try #1 at 1:29:28 AM
+144 verbose etag W/"58a51af2-738c"
+145 verbose lastModified Thu, 16 Feb 2017 03:22:26 GMT
+146 http request GET https://registry.npmjs.org/minimist
+147 http 304 https://registry.npmjs.org/minimist
+148 verbose headers { date: 'Fri, 17 Feb 2017 01:40:32 GMT',
+148 verbose headers   via: '1.1 varnish',
+148 verbose headers   'cache-control': 'max-age=300',
+148 verbose headers   etag: 'W/"58a51af2-738c"',
+148 verbose headers   age: '286',
+148 verbose headers   connection: 'keep-alive',
+148 verbose headers   'x-served-by': 'cache-jfk8132-JFK',
+148 verbose headers   'x-cache': 'HIT',
+148 verbose headers   'x-cache-hits': '16',
+148 verbose headers   'x-timer': 'S1487295632.108914,VS0,VE0',
+148 verbose headers   vary: 'Accept-Encoding' }
+149 silly get cb [ 304,
+149 silly get   { date: 'Fri, 17 Feb 2017 01:40:32 GMT',
+149 silly get     via: '1.1 varnish',
+149 silly get     'cache-control': 'max-age=300',
+149 silly get     etag: 'W/"58a51af2-738c"',
+149 silly get     age: '286',
+149 silly get     connection: 'keep-alive',
+149 silly get     'x-served-by': 'cache-jfk8132-JFK',
+149 silly get     'x-cache': 'HIT',
+149 silly get     'x-cache-hits': '16',
+149 silly get     'x-timer': 'S1487295632.108914,VS0,VE0',
+149 silly get     vary: 'Accept-Encoding' } ]
+150 verbose etag https://registry.npmjs.org/minimist from cache
+151 verbose get saving minimist to /home/vagrant/.npm/registry.npmjs.org/minimist/.cache.json
+152 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+153 silly resolveWithNewModule minimist@0.0.8 checking installable status
+154 silly cache add args [ 'minimist@0.0.8', null ]
+155 verbose cache add spec minimist@0.0.8
+156 silly cache add parsed spec Result {
+156 silly cache add   raw: 'minimist@0.0.8',
+156 silly cache add   scope: null,
+156 silly cache add   escapedName: 'minimist',
+156 silly cache add   name: 'minimist',
+156 silly cache add   rawSpec: '0.0.8',
+156 silly cache add   spec: '0.0.8',
+156 silly cache add   type: 'version' }
+157 silly addNamed minimist@0.0.8
+158 verbose addNamed "0.0.8" is a plain semver version for minimist
+159 silly mapToRegistry name minimist
+160 silly mapToRegistry using default registry
+161 silly mapToRegistry registry https://registry.npmjs.org/
+162 silly mapToRegistry data Result {
+162 silly mapToRegistry   raw: 'minimist',
+162 silly mapToRegistry   scope: null,
+162 silly mapToRegistry   escapedName: 'minimist',
+162 silly mapToRegistry   name: 'minimist',
+162 silly mapToRegistry   rawSpec: '',
+162 silly mapToRegistry   spec: 'latest',
+162 silly mapToRegistry   type: 'tag' }
+163 silly mapToRegistry uri https://registry.npmjs.org/minimist
+164 verbose addNameVersion registry:https://registry.npmjs.org/minimist not in flight; fetching
+165 verbose get https://registry.npmjs.org/minimist not expired, no request
+166 silly cache afterAdd minimist@0.0.8
+167 verbose afterAdd /home/vagrant/.npm/minimist/0.0.8/package/package.json not in flight; writing
+168 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+169 verbose afterAdd /home/vagrant/.npm/minimist/0.0.8/package/package.json written
+170 silly loadAllDepsIntoIdealTree Finishing
+171 silly loadIdealTree Finishing
+172 silly currentTree tiny-app@1.0.0
+172 silly currentTree ├── abbrev@1.1.0
+172 silly currentTree ├── accepts@1.3.3
+172 silly currentTree ├── ansi-regex@2.1.1
+172 silly currentTree ├── ansi-styles@2.2.1
+172 silly currentTree ├── aproba@1.1.1
+172 silly currentTree ├── are-we-there-yet@1.1.2
+172 silly currentTree ├── array-flatten@1.1.1
+172 silly currentTree ├── asn1@0.2.3
+172 silly currentTree ├── assert-plus@0.2.0
+172 silly currentTree ├── asynckit@0.4.0
+172 silly currentTree ├── aws-sign2@0.6.0
+172 silly currentTree ├── aws4@1.6.0
+172 silly currentTree ├── balanced-match@0.4.2
+172 silly currentTree ├── bcrypt-pbkdf@1.0.1
+172 silly currentTree ├── bindings@1.2.1
+172 silly currentTree ├── block-stream@0.0.9
+172 silly currentTree ├─┬ body-parser@1.16.1
+172 silly currentTree │ ├── debug@2.6.1
+172 silly currentTree │ ├── ms@0.7.2
+172 silly currentTree │ └── qs@6.2.1
+172 silly currentTree ├── boom@2.10.1
+172 silly currentTree ├── brace-expansion@1.1.6
+172 silly currentTree ├── buffer-shims@1.0.0
+172 silly currentTree ├── bytes@2.4.0
+172 silly currentTree ├── caseless@0.11.0
+172 silly currentTree ├── chalk@1.1.3
+172 silly currentTree ├── code-point-at@1.1.0
+172 silly currentTree ├── combined-stream@1.0.5
+172 silly currentTree ├── commander@2.9.0
+172 silly currentTree ├── concat-map@0.0.1
+172 silly currentTree ├── console-control-strings@1.1.0
+172 silly currentTree ├── content-disposition@0.5.2
+172 silly currentTree ├── content-type@1.0.2
+172 silly currentTree ├── cookie-parser@1.4.3
+172 silly currentTree ├── cookie-signature@1.0.6
+172 silly currentTree ├── cookie@0.3.1
+172 silly currentTree ├── core-util-is@1.0.2
+172 silly currentTree ├── cryptiles@2.0.5
+172 silly currentTree ├── crypto@0.0.3
+172 silly currentTree ├─┬ dashdash@1.14.1
+172 silly currentTree │ └── assert-plus@1.0.0
+172 silly currentTree ├── debug@2.2.0
+172 silly currentTree ├── deep-extend@0.4.1
+172 silly currentTree ├── delayed-stream@1.0.0
+172 silly currentTree ├── delegates@1.0.0
+172 silly currentTree ├── depd@1.1.0
+172 silly currentTree ├── destroy@1.0.4
+172 silly currentTree ├── ecc-jsbn@0.1.1
+172 silly currentTree ├── ee-first@1.1.1
+172 silly currentTree ├── ejs@2.5.5
+172 silly currentTree ├── encodeurl@1.0.1
+172 silly currentTree ├── escape-html@1.0.3
+172 silly currentTree ├── escape-string-regexp@1.0.5
+172 silly currentTree ├── etag@1.7.0
+172 silly currentTree ├── express@4.14.1
+172 silly currentTree ├── extend@3.0.0
+172 silly currentTree ├── extsprintf@1.0.2
+172 silly currentTree ├── finalhandler@0.5.1
+172 silly currentTree ├── forever-agent@0.6.1
+172 silly currentTree ├── form-data@2.1.2
+172 silly currentTree ├── forwarded@0.1.0
+172 silly currentTree ├── fresh@0.3.0
+172 silly currentTree ├── fs.realpath@1.0.0
+172 silly currentTree ├── fstream-ignore@1.0.5
+172 silly currentTree ├── fstream@1.0.10
+172 silly currentTree ├── gauge@2.7.3
+172 silly currentTree ├── generate-function@2.0.0
+172 silly currentTree ├── generate-object-property@1.2.0
+172 silly currentTree ├─┬ getpass@0.1.6
+172 silly currentTree │ └── assert-plus@1.0.0
+172 silly currentTree ├── glob@7.1.1
+172 silly currentTree ├── graceful-fs@4.1.11
+172 silly currentTree ├── graceful-readlink@1.0.1
+172 silly currentTree ├── har-validator@2.0.6
+172 silly currentTree ├── has-ansi@2.0.0
+172 silly currentTree ├── has-unicode@2.0.1
+172 silly currentTree ├── hawk@3.1.3
+172 silly currentTree ├── hoek@2.16.3
+172 silly currentTree ├── http-errors@1.5.1
+172 silly currentTree ├── http-signature@1.1.1
+172 silly currentTree ├── iconv-lite@0.4.15
+172 silly currentTree ├── inflight@1.0.6
+172 silly currentTree ├── inherits@2.0.3
+172 silly currentTree ├── ini@1.3.4
+172 silly currentTree ├── ipaddr.js@1.2.0
+172 silly currentTree ├── is-fullwidth-code-point@1.0.0
+172 silly currentTree ├── is-my-json-valid@2.15.0
+172 silly currentTree ├── is-property@1.0.2
+172 silly currentTree ├── is-typedarray@1.0.0
+172 silly currentTree ├── isarray@1.0.0
+172 silly currentTree ├── isstream@0.1.2
+172 silly currentTree ├── jodid25519@1.0.2
+172 silly currentTree ├── jsbn@0.1.1
+172 silly currentTree ├── json-schema@0.2.3
+172 silly currentTree ├── json-stringify-safe@5.0.1
+172 silly currentTree ├── jsonpointer@4.0.1
+172 silly currentTree ├── jsprim@1.3.1
+172 silly currentTree ├── media-typer@0.3.0
+172 silly currentTree ├── merge-descriptors@1.0.1
+172 silly currentTree ├── methods@1.1.2
+172 silly currentTree ├── mime-db@1.26.0
+172 silly currentTree ├── mime-types@2.1.14
+172 silly currentTree ├── mime@1.3.4
+172 silly currentTree ├── minimatch@3.0.3
+172 silly currentTree ├── ms@0.7.1
+172 silly currentTree ├── nan@2.5.0
+172 silly currentTree ├── negotiator@0.6.1
+172 silly currentTree ├── nopt@3.0.6
+172 silly currentTree ├── npmlog@4.0.2
+172 silly currentTree ├── number-is-nan@1.0.1
+172 silly currentTree ├── oauth-sign@0.8.2
+172 silly currentTree ├── object-assign@4.1.1
+172 silly currentTree ├── on-finished@2.3.0
+172 silly currentTree ├── once@1.4.0
+172 silly currentTree ├── parseurl@1.3.1
+172 silly currentTree ├── path-is-absolute@1.0.1
+172 silly currentTree ├── path-to-regexp@0.1.7
+172 silly currentTree ├── pinkie-promise@2.0.1
+172 silly currentTree ├── pinkie@2.0.4
+172 silly currentTree ├── process-nextick-args@1.0.7
+172 silly currentTree ├── proxy-addr@1.1.3
+172 silly currentTree ├── punycode@1.4.1
+172 silly currentTree ├── qs@6.2.0
+172 silly currentTree ├── range-parser@1.2.0
+172 silly currentTree ├── raw-body@2.2.0
+172 silly currentTree ├─┬ rc@1.1.6
+172 silly currentTree │ └── minimist@1.2.0
+172 silly currentTree ├── readable-stream@2.2.2
+172 silly currentTree ├─┬ request@2.79.0
+172 silly currentTree │ └── qs@6.3.1
+172 silly currentTree ├── rimraf@2.5.4
+172 silly currentTree ├── semver@5.3.0
+172 silly currentTree ├─┬ send@0.14.2
+172 silly currentTree │ └── ms@0.7.2
+172 silly currentTree ├── serve-static@1.11.2
+172 silly currentTree ├── set-blocking@2.0.0
+172 silly currentTree ├── setprototypeof@1.0.2
+172 silly currentTree ├── signal-exit@3.0.2
+172 silly currentTree ├── sntp@1.0.9
+172 silly currentTree ├─┬ sshpk@1.10.2
+172 silly currentTree │ └── assert-plus@1.0.0
+172 silly currentTree ├── statuses@1.3.1
+172 silly currentTree ├── string_decoder@0.10.31
+172 silly currentTree ├── string-width@1.0.2
+172 silly currentTree ├── stringstream@0.0.5
+172 silly currentTree ├── strip-ansi@3.0.1
+172 silly currentTree ├── strip-json-comments@1.0.4
+172 silly currentTree ├── supports-color@2.0.0
+172 silly currentTree ├─┬ tar-pack@3.3.0
+172 silly currentTree │ ├── once@1.3.3
+172 silly currentTree │ └── readable-stream@2.1.5
+172 silly currentTree ├── tar@2.2.1
+172 silly currentTree ├── tough-cookie@2.3.2
+172 silly currentTree ├── tunnel-agent@0.4.3
+172 silly currentTree ├── tweetnacl@0.14.5
+172 silly currentTree ├── type-is@1.6.14
+172 silly currentTree ├── uid-number@0.0.6
+172 silly currentTree ├── unpipe@1.0.0
+172 silly currentTree ├── util-deprecate@1.0.2
+172 silly currentTree ├── utils-merge@1.0.0
+172 silly currentTree ├── uuid@3.0.1
+172 silly currentTree ├── vary@1.1.0
+172 silly currentTree ├── verror@1.3.6
+172 silly currentTree ├── wide-align@1.1.0
+172 silly currentTree ├── wrappy@1.0.2
+172 silly currentTree └── xtend@4.0.1
+173 silly idealTree tiny-app@1.0.0
+173 silly idealTree ├── abbrev@1.1.0
+173 silly idealTree ├── accepts@1.3.3
+173 silly idealTree ├── ansi-regex@2.1.1
+173 silly idealTree ├── ansi-styles@2.2.1
+173 silly idealTree ├── aproba@1.1.1
+173 silly idealTree ├── are-we-there-yet@1.1.2
+173 silly idealTree ├── array-flatten@1.1.1
+173 silly idealTree ├── asn1@0.2.3
+173 silly idealTree ├── assert-plus@0.2.0
+173 silly idealTree ├── asynckit@0.4.0
+173 silly idealTree ├── aws-sign2@0.6.0
+173 silly idealTree ├── aws4@1.6.0
+173 silly idealTree ├── balanced-match@0.4.2
+173 silly idealTree ├── bcrypt-pbkdf@1.0.1
+173 silly idealTree ├── bcrypt@1.0.2
+173 silly idealTree ├── bindings@1.2.1
+173 silly idealTree ├── block-stream@0.0.9
+173 silly idealTree ├─┬ body-parser@1.16.1
+173 silly idealTree │ ├── debug@2.6.1
+173 silly idealTree │ ├── ms@0.7.2
+173 silly idealTree │ └── qs@6.2.1
+173 silly idealTree ├── boom@2.10.1
+173 silly idealTree ├── brace-expansion@1.1.6
+173 silly idealTree ├── buffer-shims@1.0.0
+173 silly idealTree ├── bytes@2.4.0
+173 silly idealTree ├── caseless@0.11.0
+173 silly idealTree ├── chalk@1.1.3
+173 silly idealTree ├── code-point-at@1.1.0
+173 silly idealTree ├── combined-stream@1.0.5
+173 silly idealTree ├── commander@2.9.0
+173 silly idealTree ├── concat-map@0.0.1
+173 silly idealTree ├── console-control-strings@1.1.0
+173 silly idealTree ├── content-disposition@0.5.2
+173 silly idealTree ├── content-type@1.0.2
+173 silly idealTree ├── cookie-parser@1.4.3
+173 silly idealTree ├── cookie-signature@1.0.6
+173 silly idealTree ├── cookie@0.3.1
+173 silly idealTree ├── core-util-is@1.0.2
+173 silly idealTree ├── cryptiles@2.0.5
+173 silly idealTree ├── crypto@0.0.3
+173 silly idealTree ├─┬ dashdash@1.14.1
+173 silly idealTree │ └── assert-plus@1.0.0
+173 silly idealTree ├── debug@2.2.0
+173 silly idealTree ├── deep-extend@0.4.1
+173 silly idealTree ├── delayed-stream@1.0.0
+173 silly idealTree ├── delegates@1.0.0
+173 silly idealTree ├── depd@1.1.0
+173 silly idealTree ├── destroy@1.0.4
+173 silly idealTree ├── ecc-jsbn@0.1.1
+173 silly idealTree ├── ee-first@1.1.1
+173 silly idealTree ├── ejs@2.5.5
+173 silly idealTree ├── encodeurl@1.0.1
+173 silly idealTree ├── escape-html@1.0.3
+173 silly idealTree ├── escape-string-regexp@1.0.5
+173 silly idealTree ├── etag@1.7.0
+173 silly idealTree ├── express@4.14.1
+173 silly idealTree ├── extend@3.0.0
+173 silly idealTree ├── extsprintf@1.0.2
+173 silly idealTree ├── finalhandler@0.5.1
+173 silly idealTree ├── forever-agent@0.6.1
+173 silly idealTree ├── form-data@2.1.2
+173 silly idealTree ├── forwarded@0.1.0
+173 silly idealTree ├── fresh@0.3.0
+173 silly idealTree ├── fs.realpath@1.0.0
+173 silly idealTree ├── fstream-ignore@1.0.5
+173 silly idealTree ├── fstream@1.0.10
+173 silly idealTree ├── gauge@2.7.3
+173 silly idealTree ├── generate-function@2.0.0
+173 silly idealTree ├── generate-object-property@1.2.0
+173 silly idealTree ├─┬ getpass@0.1.6
+173 silly idealTree │ └── assert-plus@1.0.0
+173 silly idealTree ├── glob@7.1.1
+173 silly idealTree ├── graceful-fs@4.1.11
+173 silly idealTree ├── graceful-readlink@1.0.1
+173 silly idealTree ├── har-validator@2.0.6
+173 silly idealTree ├── has-ansi@2.0.0
+173 silly idealTree ├── has-unicode@2.0.1
+173 silly idealTree ├── hawk@3.1.3
+173 silly idealTree ├── hoek@2.16.3
+173 silly idealTree ├── http-errors@1.5.1
+173 silly idealTree ├── http-signature@1.1.1
+173 silly idealTree ├── iconv-lite@0.4.15
+173 silly idealTree ├── inflight@1.0.6
+173 silly idealTree ├── inherits@2.0.3
+173 silly idealTree ├── ini@1.3.4
+173 silly idealTree ├── ipaddr.js@1.2.0
+173 silly idealTree ├── is-fullwidth-code-point@1.0.0
+173 silly idealTree ├── is-my-json-valid@2.15.0
+173 silly idealTree ├── is-property@1.0.2
+173 silly idealTree ├── is-typedarray@1.0.0
+173 silly idealTree ├── isarray@1.0.0
+173 silly idealTree ├── isstream@0.1.2
+173 silly idealTree ├── jodid25519@1.0.2
+173 silly idealTree ├── jsbn@0.1.1
+173 silly idealTree ├── json-schema@0.2.3
+173 silly idealTree ├── json-stringify-safe@5.0.1
+173 silly idealTree ├── jsonpointer@4.0.1
+173 silly idealTree ├── jsprim@1.3.1
+173 silly idealTree ├── media-typer@0.3.0
+173 silly idealTree ├── merge-descriptors@1.0.1
+173 silly idealTree ├── methods@1.1.2
+173 silly idealTree ├── mime-db@1.26.0
+173 silly idealTree ├── mime-types@2.1.14
+173 silly idealTree ├── mime@1.3.4
+173 silly idealTree ├── minimatch@3.0.3
+173 silly idealTree ├── minimist@0.0.8
+173 silly idealTree ├── mkdirp@0.5.1
+173 silly idealTree ├── ms@0.7.1
+173 silly idealTree ├── nan@2.5.0
+173 silly idealTree ├── negotiator@0.6.1
+173 silly idealTree ├── node-pre-gyp@0.6.32
+173 silly idealTree ├── nopt@3.0.6
+173 silly idealTree ├── npmlog@4.0.2
+173 silly idealTree ├── number-is-nan@1.0.1
+173 silly idealTree ├── oauth-sign@0.8.2
+173 silly idealTree ├── object-assign@4.1.1
+173 silly idealTree ├── on-finished@2.3.0
+173 silly idealTree ├── once@1.4.0
+173 silly idealTree ├── parseurl@1.3.1
+173 silly idealTree ├── path-is-absolute@1.0.1
+173 silly idealTree ├── path-to-regexp@0.1.7
+173 silly idealTree ├── pinkie-promise@2.0.1
+173 silly idealTree ├── pinkie@2.0.4
+173 silly idealTree ├── process-nextick-args@1.0.7
+173 silly idealTree ├── proxy-addr@1.1.3
+173 silly idealTree ├── punycode@1.4.1
+173 silly idealTree ├── qs@6.2.0
+173 silly idealTree ├── range-parser@1.2.0
+173 silly idealTree ├── raw-body@2.2.0
+173 silly idealTree ├─┬ rc@1.1.6
+173 silly idealTree │ └── minimist@1.2.0
+173 silly idealTree ├── readable-stream@2.2.2
+173 silly idealTree ├─┬ request@2.79.0
+173 silly idealTree │ └── qs@6.3.1
+173 silly idealTree ├── rimraf@2.5.4
+173 silly idealTree ├── semver@5.3.0
+173 silly idealTree ├─┬ send@0.14.2
+173 silly idealTree │ └── ms@0.7.2
+173 silly idealTree ├── serve-static@1.11.2
+173 silly idealTree ├── set-blocking@2.0.0
+173 silly idealTree ├── setprototypeof@1.0.2
+173 silly idealTree ├── signal-exit@3.0.2
+173 silly idealTree ├── sntp@1.0.9
+173 silly idealTree ├─┬ sshpk@1.10.2
+173 silly idealTree │ └── assert-plus@1.0.0
+173 silly idealTree ├── statuses@1.3.1
+173 silly idealTree ├── string_decoder@0.10.31
+173 silly idealTree ├── string-width@1.0.2
+173 silly idealTree ├── stringstream@0.0.5
+173 silly idealTree ├── strip-ansi@3.0.1
+173 silly idealTree ├── strip-json-comments@1.0.4
+173 silly idealTree ├── supports-color@2.0.0
+173 silly idealTree ├─┬ tar-pack@3.3.0
+173 silly idealTree │ ├── once@1.3.3
+173 silly idealTree │ └── readable-stream@2.1.5
+173 silly idealTree ├── tar@2.2.1
+173 silly idealTree ├── tough-cookie@2.3.2
+173 silly idealTree ├── tunnel-agent@0.4.3
+173 silly idealTree ├── tweetnacl@0.14.5
+173 silly idealTree ├── type-is@1.6.14
+173 silly idealTree ├── uid-number@0.0.6
+173 silly idealTree ├── unpipe@1.0.0
+173 silly idealTree ├── util-deprecate@1.0.2
+173 silly idealTree ├── utils-merge@1.0.0
+173 silly idealTree ├── uuid@3.0.1
+173 silly idealTree ├── vary@1.1.0
+173 silly idealTree ├── verror@1.3.6
+173 silly idealTree ├── wide-align@1.1.0
+173 silly idealTree ├── wrappy@1.0.2
+173 silly idealTree └── xtend@4.0.1
+174 silly generateActionsToTake Starting
+175 silly install generateActionsToTake
+176 silly generateActionsToTake Finishing
+177 silly diffTrees action count 4
+178 silly diffTrees add minimist@0.0.8
+179 silly diffTrees add mkdirp@0.5.1
+180 silly diffTrees add node-pre-gyp@0.6.32
+181 silly diffTrees add bcrypt@1.0.2
+182 silly decomposeActions action count 32
+183 silly decomposeActions fetch minimist@0.0.8
+184 silly decomposeActions extract minimist@0.0.8
+185 silly decomposeActions test minimist@0.0.8
+186 silly decomposeActions preinstall minimist@0.0.8
+187 silly decomposeActions build minimist@0.0.8
+188 silly decomposeActions install minimist@0.0.8
+189 silly decomposeActions postinstall minimist@0.0.8
+190 silly decomposeActions finalize minimist@0.0.8
+191 silly decomposeActions fetch mkdirp@0.5.1
+192 silly decomposeActions extract mkdirp@0.5.1
+193 silly decomposeActions test mkdirp@0.5.1
+194 silly decomposeActions preinstall mkdirp@0.5.1
+195 silly decomposeActions build mkdirp@0.5.1
+196 silly decomposeActions install mkdirp@0.5.1
+197 silly decomposeActions postinstall mkdirp@0.5.1
+198 silly decomposeActions finalize mkdirp@0.5.1
+199 silly decomposeActions fetch node-pre-gyp@0.6.32
+200 silly decomposeActions extract node-pre-gyp@0.6.32
+201 silly decomposeActions test node-pre-gyp@0.6.32
+202 silly decomposeActions preinstall node-pre-gyp@0.6.32
+203 silly decomposeActions build node-pre-gyp@0.6.32
+204 silly decomposeActions install node-pre-gyp@0.6.32
+205 silly decomposeActions postinstall node-pre-gyp@0.6.32
+206 silly decomposeActions finalize node-pre-gyp@0.6.32
+207 silly decomposeActions fetch bcrypt@1.0.2
+208 silly decomposeActions extract bcrypt@1.0.2
+209 silly decomposeActions test bcrypt@1.0.2
+210 silly decomposeActions preinstall bcrypt@1.0.2
+211 silly decomposeActions build bcrypt@1.0.2
+212 silly decomposeActions install bcrypt@1.0.2
+213 silly decomposeActions postinstall bcrypt@1.0.2
+214 silly decomposeActions finalize bcrypt@1.0.2
+215 silly executeActions Starting
+216 silly install executeActions
+217 silly doSerial global-install 0
+218 silly doParallel fetch 4
+219 verbose correctMkdir /home/vagrant/.npm/_locks correctMkdir not in flight; initializing
+220 verbose lock using /home/vagrant/.npm/_locks/staging-da230eb35b772399.lock for /vagrant/week2day2/TinyApp/node_modules/.staging
+221 silly doParallel extract 4
+222 silly extract minimist@0.0.8
+223 silly extract mkdirp@0.5.1
+224 silly extract node-pre-gyp@0.6.32
+225 silly extract bcrypt@1.0.2
+226 verbose unbuild node_modules/.staging/minimist-fe55b388
+227 verbose unbuild node_modules/.staging/bcrypt-1a62ec52
+228 verbose unbuild node_modules/.staging/node-pre-gyp-b6c33065
+229 verbose unbuild node_modules/.staging/mkdirp-bfe17cb7
+230 silly gentlyRm /vagrant/week2day2/TinyApp/node_modules/.staging/bcrypt-1a62ec52 is being purged from base /vagrant/week2day2/TinyApp
+231 verbose gentlyRm don't care about contents; nuking /vagrant/week2day2/TinyApp/node_modules/.staging/bcrypt-1a62ec52
+232 silly gentlyRm /vagrant/week2day2/TinyApp/node_modules/.staging/node-pre-gyp-b6c33065 is being purged from base /vagrant/week2day2/TinyApp
+233 verbose gentlyRm don't care about contents; nuking /vagrant/week2day2/TinyApp/node_modules/.staging/node-pre-gyp-b6c33065
+234 silly gentlyRm /vagrant/week2day2/TinyApp/node_modules/.staging/minimist-fe55b388 is being purged from base /vagrant/week2day2/TinyApp
+235 verbose gentlyRm don't care about contents; nuking /vagrant/week2day2/TinyApp/node_modules/.staging/minimist-fe55b388
+236 verbose tar unpack /home/vagrant/.npm/bcrypt/1.0.2/package.tgz
+237 verbose tar unpacking to /vagrant/week2day2/TinyApp/node_modules/.staging/bcrypt-1a62ec52
+238 silly gentlyRm /vagrant/week2day2/TinyApp/node_modules/.staging/bcrypt-1a62ec52 is being purged
+239 verbose gentlyRm don't care about contents; nuking /vagrant/week2day2/TinyApp/node_modules/.staging/bcrypt-1a62ec52
+240 verbose tar unpack /home/vagrant/.npm/node-pre-gyp/0.6.32/package.tgz
+241 verbose tar unpacking to /vagrant/week2day2/TinyApp/node_modules/.staging/node-pre-gyp-b6c33065
+242 silly gentlyRm /vagrant/week2day2/TinyApp/node_modules/.staging/node-pre-gyp-b6c33065 is being purged
+243 verbose gentlyRm don't care about contents; nuking /vagrant/week2day2/TinyApp/node_modules/.staging/node-pre-gyp-b6c33065
+244 verbose tar unpack /home/vagrant/.npm/minimist/0.0.8/package.tgz
+245 verbose tar unpacking to /vagrant/week2day2/TinyApp/node_modules/.staging/minimist-fe55b388
+246 silly gentlyRm /vagrant/week2day2/TinyApp/node_modules/.staging/minimist-fe55b388 is being purged
+247 verbose gentlyRm don't care about contents; nuking /vagrant/week2day2/TinyApp/node_modules/.staging/minimist-fe55b388
+248 silly gentlyRm /vagrant/week2day2/TinyApp/node_modules/.staging/mkdirp-bfe17cb7 is being purged from base /vagrant/week2day2/TinyApp
+249 verbose gentlyRm don't care about contents; nuking /vagrant/week2day2/TinyApp/node_modules/.staging/mkdirp-bfe17cb7
+250 silly gunzTarPerm modes [ '775', '664' ]
+251 silly gunzTarPerm modes [ '775', '664' ]
+252 silly gunzTarPerm modes [ '775', '664' ]
+253 verbose tar unpack /home/vagrant/.npm/mkdirp/0.5.1/package.tgz
+254 verbose tar unpacking to /vagrant/week2day2/TinyApp/node_modules/.staging/mkdirp-bfe17cb7
+255 silly gentlyRm /vagrant/week2day2/TinyApp/node_modules/.staging/mkdirp-bfe17cb7 is being purged
+256 verbose gentlyRm don't care about contents; nuking /vagrant/week2day2/TinyApp/node_modules/.staging/mkdirp-bfe17cb7
+257 silly gunzTarPerm modes [ '775', '664' ]
+258 silly gunzTarPerm extractEntry package.json
+259 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+260 silly gunzTarPerm extractEntry package.json
+261 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+262 silly gunzTarPerm extractEntry package.json
+263 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+264 silly gunzTarPerm extractEntry package.json
+265 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+266 silly gunzTarPerm extractEntry .npmignore
+267 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+268 silly gunzTarPerm extractEntry README.md
+269 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+270 silly gunzTarPerm extractEntry README.md
+271 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+272 silly gunzTarPerm extractEntry LICENSE
+273 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+274 silly gunzTarPerm extractEntry appveyor.yml
+275 silly gunzTarPerm modified mode [ 'appveyor.yml', 420, 436 ]
+276 silly gunzTarPerm extractEntry bin/node-pre-gyp
+277 silly gunzTarPerm modified mode [ 'bin/node-pre-gyp', 493, 509 ]
+278 silly gunzTarPerm extractEntry bin/node-pre-gyp.cmd
+279 silly gunzTarPerm modified mode [ 'bin/node-pre-gyp.cmd', 420, 436 ]
+280 silly gunzTarPerm extractEntry lib/build.js
+281 silly gunzTarPerm modified mode [ 'lib/build.js', 420, 436 ]
+282 silly gunzTarPerm extractEntry lib/install.js
+283 silly gunzTarPerm modified mode [ 'lib/install.js', 420, 436 ]
+284 silly gunzTarPerm extractEntry lib/node-pre-gyp.js
+285 silly gunzTarPerm modified mode [ 'lib/node-pre-gyp.js', 420, 436 ]
+286 silly gunzTarPerm extractEntry lib/package.js
+287 silly gunzTarPerm modified mode [ 'lib/package.js', 420, 436 ]
+288 silly gunzTarPerm extractEntry lib/pre-binding.js
+289 silly gunzTarPerm modified mode [ 'lib/pre-binding.js', 420, 436 ]
+290 silly gunzTarPerm extractEntry lib/info.js
+291 silly gunzTarPerm modified mode [ 'lib/info.js', 420, 436 ]
+292 silly gunzTarPerm extractEntry lib/rebuild.js
+293 silly gunzTarPerm modified mode [ 'lib/rebuild.js', 420, 436 ]
+294 silly gunzTarPerm extractEntry lib/reinstall.js
+295 silly gunzTarPerm modified mode [ 'lib/reinstall.js', 420, 436 ]
+296 silly gunzTarPerm extractEntry lib/reveal.js
+297 silly gunzTarPerm modified mode [ 'lib/reveal.js', 420, 436 ]
+298 silly gunzTarPerm extractEntry lib/testbinary.js
+299 silly gunzTarPerm modified mode [ 'lib/testbinary.js', 420, 436 ]
+300 silly gunzTarPerm extractEntry lib/testpackage.js
+301 silly gunzTarPerm modified mode [ 'lib/testpackage.js', 420, 436 ]
+302 silly gunzTarPerm extractEntry lib/configure.js
+303 silly gunzTarPerm modified mode [ 'lib/configure.js', 420, 436 ]
+304 silly gunzTarPerm extractEntry lib/unpublish.js
+305 silly gunzTarPerm modified mode [ 'lib/unpublish.js', 420, 436 ]
+306 silly gunzTarPerm extractEntry lib/clean.js
+307 silly gunzTarPerm modified mode [ 'lib/clean.js', 420, 436 ]
+308 silly gunzTarPerm extractEntry lib/publish.js
+309 silly gunzTarPerm modified mode [ 'lib/publish.js', 420, 436 ]
+310 silly gunzTarPerm extractEntry lib/util/compile.js
+311 silly gunzTarPerm modified mode [ 'lib/util/compile.js', 420, 436 ]
+312 silly gunzTarPerm extractEntry lib/util/handle_gyp_opts.js
+313 silly gunzTarPerm modified mode [ 'lib/util/handle_gyp_opts.js', 420, 436 ]
+314 silly gunzTarPerm extractEntry lib/util/s3_setup.js
+315 silly gunzTarPerm modified mode [ 'lib/util/s3_setup.js', 420, 436 ]
+316 silly gunzTarPerm extractEntry lib/util/versioning.js
+317 silly gunzTarPerm modified mode [ 'lib/util/versioning.js', 420, 436 ]
+318 silly gunzTarPerm extractEntry lib/util/abi_crosswalk.json
+319 silly gunzTarPerm modified mode [ 'lib/util/abi_crosswalk.json', 420, 436 ]
+320 silly gunzTarPerm extractEntry lib/util/nw-pre-gyp/package.json
+321 silly gunzTarPerm modified mode [ 'lib/util/nw-pre-gyp/package.json', 420, 436 ]
+322 silly gunzTarPerm extractEntry lib/util/nw-pre-gyp/index.html
+323 silly gunzTarPerm modified mode [ 'lib/util/nw-pre-gyp/index.html', 420, 436 ]
+324 silly gunzTarPerm extractEntry CHANGELOG.md
+325 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+326 silly gunzTarPerm extractEntry LICENSE
+327 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+328 silly gunzTarPerm extractEntry index.js
+329 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+330 silly gunzTarPerm extractEntry LICENSE
+331 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+332 silly gunzTarPerm extractEntry index.js
+333 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+334 silly gunzTarPerm extractEntry .travis.yml
+335 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+336 silly gunzTarPerm extractEntry example/parse.js
+337 silly gunzTarPerm modified mode [ 'example/parse.js', 420, 436 ]
+338 silly gunzTarPerm extractEntry LICENSE
+339 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+340 silly gunzTarPerm extractEntry .travis.yml
+341 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+342 silly gunzTarPerm extractEntry bin/cmd.js
+343 silly gunzTarPerm modified mode [ 'bin/cmd.js', 493, 509 ]
+344 silly gunzTarPerm extractEntry bcrypt.js
+345 silly gunzTarPerm modified mode [ 'bcrypt.js', 420, 436 ]
+346 silly gunzTarPerm extractEntry Makefile
+347 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+348 silly gunzTarPerm extractEntry readme.markdown
+349 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 436 ]
+350 silly gunzTarPerm extractEntry test/dash.js
+351 silly gunzTarPerm modified mode [ 'test/dash.js', 420, 436 ]
+352 silly gunzTarPerm extractEntry bin/usage.txt
+353 silly gunzTarPerm modified mode [ 'bin/usage.txt', 420, 436 ]
+354 silly gunzTarPerm extractEntry examples/pow.js
+355 silly gunzTarPerm modified mode [ 'examples/pow.js', 420, 436 ]
+356 silly gunzTarPerm extractEntry .travis.yml
+357 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+358 silly gunzTarPerm extractEntry appveyor.yml
+359 silly gunzTarPerm modified mode [ 'appveyor.yml', 420, 436 ]
+360 silly gunzTarPerm extractEntry readme.markdown
+361 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 436 ]
+362 silly gunzTarPerm extractEntry test/chmod.js
+363 silly gunzTarPerm modified mode [ 'test/chmod.js', 420, 436 ]
+364 silly gunzTarPerm extractEntry test/default_bool.js
+365 silly gunzTarPerm modified mode [ 'test/default_bool.js', 420, 436 ]
+366 silly gunzTarPerm extractEntry test/dotted.js
+367 silly gunzTarPerm modified mode [ 'test/dotted.js', 420, 436 ]
+368 silly gunzTarPerm extractEntry test/long.js
+369 silly gunzTarPerm modified mode [ 'test/long.js', 420, 436 ]
+370 silly gunzTarPerm extractEntry test/parse.js
+371 silly gunzTarPerm modified mode [ 'test/parse.js', 420, 436 ]
+372 silly gunzTarPerm extractEntry test/parse_modified.js
+373 silly gunzTarPerm modified mode [ 'test/parse_modified.js', 420, 436 ]
+374 silly gunzTarPerm extractEntry test/short.js
+375 silly gunzTarPerm modified mode [ 'test/short.js', 420, 436 ]
+376 silly gunzTarPerm extractEntry test/whitespace.js
+377 silly gunzTarPerm modified mode [ 'test/whitespace.js', 420, 436 ]
+378 silly gunzTarPerm extractEntry test/opts_fs_sync.js
+379 silly gunzTarPerm modified mode [ 'test/opts_fs_sync.js', 420, 436 ]
+380 silly gunzTarPerm extractEntry CHANGELOG.md
+381 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+382 silly gunzTarPerm extractEntry binding.gyp
+383 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 436 ]
+384 silly gunzTarPerm extractEntry examples/async_compare.js
+385 silly gunzTarPerm modified mode [ 'examples/async_compare.js', 420, 436 ]
+386 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
+387 silly gunzTarPerm modified mode [ 'examples/forever_gen_salt.js', 420, 436 ]
+388 silly gunzTarPerm extractEntry test/perm.js
+389 silly gunzTarPerm modified mode [ 'test/perm.js', 420, 436 ]
+390 silly gunzTarPerm extractEntry test/perm_sync.js
+391 silly gunzTarPerm modified mode [ 'test/perm_sync.js', 420, 436 ]
+392 silly gunzTarPerm extractEntry lib/promises.js
+393 silly gunzTarPerm modified mode [ 'lib/promises.js', 420, 436 ]
+394 silly gunzTarPerm extractEntry test/async.js
+395 silly gunzTarPerm modified mode [ 'test/async.js', 420, 436 ]
+396 silly gunzTarPerm extractEntry test/opts_fs.js
+397 silly gunzTarPerm modified mode [ 'test/opts_fs.js', 420, 436 ]
+398 silly gunzTarPerm extractEntry test/rel.js
+399 silly gunzTarPerm modified mode [ 'test/rel.js', 420, 436 ]
+400 silly gunzTarPerm extractEntry test/promise.js
+401 silly gunzTarPerm modified mode [ 'test/promise.js', 420, 436 ]
+402 silly gunzTarPerm extractEntry test/repetitions.js
+403 silly gunzTarPerm modified mode [ 'test/repetitions.js', 420, 436 ]
+404 silly gunzTarPerm extractEntry test/return.js
+405 silly gunzTarPerm modified mode [ 'test/return.js', 420, 436 ]
+406 silly gunzTarPerm extractEntry test/return_sync.js
+407 silly gunzTarPerm modified mode [ 'test/return_sync.js', 420, 436 ]
+408 silly gunzTarPerm extractEntry test/sync.js
+409 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 436 ]
+410 silly gunzTarPerm extractEntry ISSUE_TEMPLATE.md
+411 silly gunzTarPerm modified mode [ 'ISSUE_TEMPLATE.md', 420, 436 ]
+412 silly gunzTarPerm extractEntry test/root.js
+413 silly gunzTarPerm modified mode [ 'test/root.js', 420, 436 ]
+414 silly gunzTarPerm extractEntry test/sync.js
+415 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 436 ]
+416 silly gunzTarPerm extractEntry src/bcrypt.cc
+417 silly gunzTarPerm modified mode [ 'src/bcrypt.cc', 420, 436 ]
+418 silly gunzTarPerm extractEntry src/bcrypt_node.cc
+419 silly gunzTarPerm modified mode [ 'src/bcrypt_node.cc', 420, 436 ]
+420 silly gunzTarPerm extractEntry src/blowfish.cc
+421 silly gunzTarPerm modified mode [ 'src/blowfish.cc', 420, 436 ]
+422 silly gunzTarPerm extractEntry src/node_blf.h
+423 silly gunzTarPerm modified mode [ 'src/node_blf.h', 420, 436 ]
+424 silly gunzTarPerm extractEntry test/mkdirp.js
+425 silly gunzTarPerm modified mode [ 'test/mkdirp.js', 420, 436 ]
+426 silly gunzTarPerm extractEntry test/umask.js
+427 silly gunzTarPerm modified mode [ 'test/umask.js', 420, 436 ]
+428 silly gunzTarPerm extractEntry test/clobber.js
+429 silly gunzTarPerm modified mode [ 'test/clobber.js', 420, 436 ]
+430 silly gunzTarPerm extractEntry test/umask_sync.js
+431 silly gunzTarPerm modified mode [ 'test/umask_sync.js', 420, 436 ]
+432 silly gunzTarPerm extractEntry werker.yml
+433 silly gunzTarPerm modified mode [ 'werker.yml', 420, 436 ]
+434 silly gunzTarPerm extractEntry test/race.js
+435 silly gunzTarPerm modified mode [ 'test/race.js', 420, 436 ]
+436 silly gentlyRm /vagrant/week2day2/TinyApp/node_modules/.staging/minimist-fe55b388/node_modules is being purged
+437 verbose gentlyRm don't care about contents; nuking /vagrant/week2day2/TinyApp/node_modules/.staging/minimist-fe55b388/node_modules
+438 silly gentlyRm /vagrant/week2day2/TinyApp/node_modules/.staging/mkdirp-bfe17cb7/node_modules is being purged
+439 verbose gentlyRm don't care about contents; nuking /vagrant/week2day2/TinyApp/node_modules/.staging/mkdirp-bfe17cb7/node_modules
+440 silly gentlyRm /vagrant/week2day2/TinyApp/node_modules/.staging/bcrypt-1a62ec52/node_modules is being purged
+441 verbose gentlyRm don't care about contents; nuking /vagrant/week2day2/TinyApp/node_modules/.staging/bcrypt-1a62ec52/node_modules
+442 silly gentlyRm /vagrant/week2day2/TinyApp/node_modules/.staging/node-pre-gyp-b6c33065/node_modules is being purged
+443 verbose gentlyRm don't care about contents; nuking /vagrant/week2day2/TinyApp/node_modules/.staging/node-pre-gyp-b6c33065/node_modules
+444 silly doParallel preinstall 4
+445 silly preinstall minimist@0.0.8 /vagrant/week2day2/TinyApp/node_modules/.staging/minimist-fe55b388
+446 info lifecycle minimist@0.0.8~preinstall: minimist@0.0.8
+447 silly preinstall mkdirp@0.5.1 /vagrant/week2day2/TinyApp/node_modules/.staging/mkdirp-bfe17cb7
+448 info lifecycle mkdirp@0.5.1~preinstall: mkdirp@0.5.1
+449 silly preinstall node-pre-gyp@0.6.32 /vagrant/week2day2/TinyApp/node_modules/.staging/node-pre-gyp-b6c33065
+450 info lifecycle node-pre-gyp@0.6.32~preinstall: node-pre-gyp@0.6.32
+451 silly preinstall bcrypt@1.0.2 /vagrant/week2day2/TinyApp/node_modules/.staging/bcrypt-1a62ec52
+452 info lifecycle bcrypt@1.0.2~preinstall: bcrypt@1.0.2
+453 silly lifecycle mkdirp@0.5.1~preinstall: no script for preinstall, continuing
+454 silly lifecycle minimist@0.0.8~preinstall: no script for preinstall, continuing
+455 silly lifecycle bcrypt@1.0.2~preinstall: no script for preinstall, continuing
+456 silly lifecycle node-pre-gyp@0.6.32~preinstall: no script for preinstall, continuing
+457 silly doReverseSerial remove 0
+458 silly doSerial move 0
+459 silly doSerial finalize 4
+460 silly finalize /vagrant/week2day2/TinyApp/node_modules/minimist
+461 silly finalize /vagrant/week2day2/TinyApp/node_modules/mkdirp
+462 silly finalize /vagrant/week2day2/TinyApp/node_modules/node-pre-gyp
+463 silly finalize /vagrant/week2day2/TinyApp/node_modules/bcrypt
+464 silly doSerial build 4
+465 silly build minimist@0.0.8
+466 silly build mkdirp@0.5.1
+467 silly build node-pre-gyp@0.6.32
+468 silly build bcrypt@1.0.2
+469 silly doSerial global-link 0
+470 silly doParallel update-linked 0
+471 silly doSerial install 4
+472 silly install minimist@0.0.8 /vagrant/week2day2/TinyApp/node_modules/.staging/minimist-fe55b388
+473 info lifecycle minimist@0.0.8~install: minimist@0.0.8
+474 silly lifecycle minimist@0.0.8~install: no script for install, continuing
+475 silly install mkdirp@0.5.1 /vagrant/week2day2/TinyApp/node_modules/.staging/mkdirp-bfe17cb7
+476 info lifecycle mkdirp@0.5.1~install: mkdirp@0.5.1
+477 silly lifecycle mkdirp@0.5.1~install: no script for install, continuing
+478 silly install node-pre-gyp@0.6.32 /vagrant/week2day2/TinyApp/node_modules/.staging/node-pre-gyp-b6c33065
+479 info lifecycle node-pre-gyp@0.6.32~install: node-pre-gyp@0.6.32
+480 silly lifecycle node-pre-gyp@0.6.32~install: no script for install, continuing
+481 silly install bcrypt@1.0.2 /vagrant/week2day2/TinyApp/node_modules/.staging/bcrypt-1a62ec52
+482 info lifecycle bcrypt@1.0.2~install: bcrypt@1.0.2
+483 verbose lifecycle bcrypt@1.0.2~install: unsafe-perm in lifecycle true
+484 verbose lifecycle bcrypt@1.0.2~install: PATH: /home/vagrant/.nvm/versions/node/v6.3.1/lib/node_modules/npm/bin/node-gyp-bin:/vagrant/week2day2/TinyApp/node_modules/bcrypt/node_modules/.bin:/vagrant/week2day2/TinyApp/node_modules/.bin:/home/vagrant/.nvm/versions/node/v6.3.1/bin:/home/vagrant/.nvm/versions/node/v6.3.1/bin:/home/vagrant/.rvm/gems/ruby-2.3.0/bin:/home/vagrant/.rvm/gems/ruby-2.3.0@global/bin:/home/vagrant/.rvm/rubies/ruby-2.3.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/vagrant/.rvm/bin:/home/vagrant/.rvm/bin
+485 verbose lifecycle bcrypt@1.0.2~install: CWD: /vagrant/week2day2/TinyApp/node_modules/bcrypt
+486 silly lifecycle bcrypt@1.0.2~install: Args: [ '-c', 'node-pre-gyp install --fallback-to-build' ]
+487 info lifecycle bcrypt@1.0.2~install: Failed to exec install script
+488 verbose unlock done using /home/vagrant/.npm/_locks/staging-da230eb35b772399.lock for /vagrant/week2day2/TinyApp/node_modules/.staging
+489 silly rollbackFailedOptional Starting
+490 silly rollbackFailedOptional Finishing
+491 silly runTopLevelLifecycles Starting
+492 silly runTopLevelLifecycles Finishing
+493 silly install printInstalled
+494 warn tiny-app@1.0.0 No description
+495 warn tiny-app@1.0.0 No repository field.
+496 verbose stack Error: bcrypt@1.0.2 install: `node-pre-gyp install --fallback-to-build`
+496 verbose stack spawn ENOENT
+496 verbose stack     at ChildProcess.<anonymous> (/home/vagrant/.nvm/versions/node/v6.3.1/lib/node_modules/npm/lib/utils/spawn.js:33:16)
+496 verbose stack     at emitTwo (events.js:106:13)
+496 verbose stack     at ChildProcess.emit (events.js:191:7)
+496 verbose stack     at maybeClose (internal/child_process.js:852:16)
+496 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+497 verbose pkgid bcrypt@1.0.2
+498 verbose cwd /vagrant/week2day2/TinyApp
+499 error Linux 4.4.0-21-generic
+500 error argv "/home/vagrant/.nvm/versions/node/v6.3.1/bin/node" "/home/vagrant/.nvm/versions/node/v6.3.1/bin/npm" "install" "bcrypt" "--no-bin-links" "--save"
+501 error node v6.3.1
+502 error npm  v3.10.3
+503 error file sh
+504 error code ELIFECYCLE
+505 error errno ENOENT
+506 error syscall spawn
+507 error bcrypt@1.0.2 install: `node-pre-gyp install --fallback-to-build`
+507 error spawn ENOENT
+508 error Failed at the bcrypt@1.0.2 install script 'node-pre-gyp install --fallback-to-build'.
+508 error Make sure you have the latest version of node.js and npm installed.
+508 error If you do, this is most likely a problem with the bcrypt package,
+508 error not with npm itself.
+508 error Tell the author that this fails on your system:
+508 error     node-pre-gyp install --fallback-to-build
+508 error You can get information on how to open an issue for this project with:
+508 error     npm bugs bcrypt
+508 error Or if that isn't available, you can get their info via:
+508 error     npm owner ls bcrypt
+508 error There is likely additional logging output above.
+509 verbose exit [ 1, true ]

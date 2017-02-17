@@ -6,8 +6,12 @@ const PORT = process.env.PORT || 8080; // default port 8080
 const bodyParser = require("body-parser");
 
 const urlDatabase = {
-  "b2xVn2": "http://www.lighthouselabs.ca",
-  "9sm5xK": "http://www.google.com"
+  "123456": {
+    "b2xVn2": "http://www.lighthouselabs.ca"
+  },
+  "ironMan": {
+    "9sm5xK": "http://www.google.com"
+  }
 };
 
 const users = {
@@ -46,19 +50,32 @@ app.get("/login", (req, res) => {
   res.render("urls_login");
 })
 
-app.get("/u/:shortURL", (req, res) => {
-  let longURL = urlDatabase[req.params.shortURL];
-  res.redirect(longURL); //redirects to the website
+app.get("/:shortURL", (req, res) => {
+  let tinyURL = req.params.shortURL;
+  console.log(tinyURL);
+  console.log("urlDB", urlDatabase);
+  for (var user in urlDatabase) {
+    console.log("user", urlDatabase[user]);
+    if (urlDatabase[user][tinyURL]) {
+      console.log("in loop", urlDatabase[user][tinyURL]);
+      res.redirect(urlDatabase[user][tinyURL]);
+    };
+  };
 });
 
 app.get("/urls", (req, res) => {
   if (req.cookies["userId"]) {
     let user = req.cookies["userId"];
     let templateVars = {
-      urls: urlDatabase,
+      urls: {},
       userId: user,
       userData: users[user]
-    }
+    };
+    for (let userId in urlDatabase) {
+      if (user) {
+    templateVars.urls = urlDatabase[userId];
+      };
+    };
   res.render("urls_index", templateVars);
   };
 });
@@ -72,6 +89,8 @@ app.get("/urls/new", (req, res) => {
       userData: users[user]
     }
   res.render("urls_new", templateVars);
+  } else {
+  res.redirect("/login")
   }
 });
 
