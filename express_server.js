@@ -26,8 +26,8 @@ const users = {
   "123456": {
     id: "123456",
     email: "mitchy@mapleLeafs.ca",
-    password: "rookieOfTheYear"
-  }
+    password: "$2a$10$cj/GPhxE6LtH8WTwfAvM7OXAG7FyY8N.x9ZfSprSkG0LtHuL1kKfa"
+  } //password = "rookieOfTheYear"
 }
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -69,7 +69,7 @@ app.get("/urls", (req, res) => {
       email: users[user].email
     };
     for (let userObj in urlDatabase) {
-      if (user) {
+      if (urlDatabase[user]) {
         templateVars.allUrls = urlDatabase[userObj];
       };
     };
@@ -193,8 +193,8 @@ app.post("/register", (req, res) => {
     email: email.toLowerCase(),
     password: hashed_password
   };
+  console.log(hashed_password);
   req.session.userId = id;
-  console.log(users);
   res.redirect("/");
 });
 // -----------------------------------------------------------------------------
