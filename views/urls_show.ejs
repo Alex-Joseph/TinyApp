@@ -8,9 +8,12 @@
 </header>
 <body style="font-size:20px; padding:50px;">
     <h1>ShortURL: <%= shortURL %></h1>
-    <form method="POST" action="/urls/<%= shortURL%>/update">
-      <input id="inputId" type:"text" name="longURL" value="<%= urls[shortURL] %>" style="width: 250px">
-      <input type="submit" value="Update">
-    </form>
+      <form method="POST" action="/urls/<%= shortURL%>/update">
+        <input type:"text" name="longURL" value="<%= urls[shortURL] %>" placeholder="<%= url %>" style="width: 250px">
+        <input type="submit" value="Update">
+      </form>
+      <form method="POST" action="/urls/<%= shortURL %>/delete">
+        <input type="submit" value="Delete">
+      </form>
 </body>
 </html>
