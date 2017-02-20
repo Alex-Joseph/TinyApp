@@ -5,8 +5,8 @@ const app = express();
 const PORT = process.env.PORT || 8080; // default port 8080
 const bodyParser = require("body-parser");
 const bcrypt = require('bcrypt');
-let password = "PepperPotts";
-let hashed_password = bcrypt.hashSync(password, 10);
+// let password = "PepperPotts";
+// let hashed_password = bcrypt.hashSync(password, 10);
 
 const urlDatabase = {
   "123456": {
@@ -14,7 +14,8 @@ const urlDatabase = {
   },
   "ironMan": {
     "9sm5xK": "http://www.google.com"
-  }
+  },
+  // "new_url": {}
 };
 
 const users = {
@@ -176,8 +177,8 @@ app.post("/logout", (req, res) => {
 // -----------------------------------------------------------------------------
 app.post("/register", (req, res) => {
   let email = req.body.email;
-  password = req.body.password;
-  hashed_password = bcrypt.hashSync(password, 10);
+  let password = req.body.password;
+  let hashed_password = bcrypt.hashSync(password, 10);
   if (!email || !password) {
     res.status(400).send("Oops! Check your email and password");
   };
@@ -187,23 +188,29 @@ app.post("/register", (req, res) => {
       res.status(400).send("Oops! That email is taken already!");
     }
   };
-  let id = generateRandomString(3);
-  users[id] = {
-    id: id,
+  let userId = generateRandomString(3);
+  users[userId] = {
+    id: userId,
     email: email.toLowerCase(),
     password: hashed_password
   };
-  console.log(hashed_password);
-  req.session.userId = id;
+  urlDatabase[userId] = {};
+  req.session.userId = userId;
   res.redirect("/");
 });
 // -----------------------------------------------------------------------------
 app.post("/new-url", (req, res) => {
   if (req.session.userId) {
     let user = req.session.userId;
-    let id = generateRandomString(4);
-    urlDatabase[user][id] = `http://${req.body.longURL}`;
-    return res.redirect(`/urls/${id}`);
+    let urlId = generateRandomString(4);
+    let longURL = req.body.longURL;
+    let re = /^www/i;
+    let goodURL = longURL.replace(re, "http://www");
+    console.log("this is goodURL", goodURL);
+    console.log("urlDatabase.user", urlDatabase[user], "user", user);
+    urlDatabase[user][urlId] = String(goodURL);
+    console.log(urlDatabase);
+    return res.redirect(`/urls/${urlId}`);
   }
   res.status(401).send("Please login to create a new link &rarr; <a href='/login'>login</a>");
 });
